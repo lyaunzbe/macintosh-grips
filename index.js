@@ -68,6 +68,7 @@ require('soundcloud-badge')({
     analyser = Analyser(audio);
   }, false);
 
+  audio.crossOrigin = 'Anonymous';
   audio.src  = src;
   audio.addEventListener('ended', function() {
     audio.currentTime = 0;
